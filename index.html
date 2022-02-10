@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/misc/icon.png">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
     <title>ITHUB</title>
 </head>
 <body>
@@ -254,10 +256,78 @@
         <div class="container">
             <div class="contacts__inner">
                 <div class="contacts__inner-text">
-                    <h2 class="title contacts-title">Наши<span class="orange"> контакты</span></h2>
+                    <h2 class="title contacts-title">Мы<span class="orange"> рядом</span></h2>
                 </div>
+
+                <div class="contacts__map">
+                    <div class="map" id="map"></div>
+                </div>
+
+               
+        </div>
     </section>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+            <div class="footer__form">
+                
+                <div class="form__text-inner">
+                    <p class="form__subtitle">Нужна помощь?</p>
+                    <h3 class="form__title">Оставьте заявку!</h3>
+                </div>
+                <form class="form__inner" id="signup-form">
+                    <div class="input__top-side">
+                    <div class="form__input">
+                        <input placeholder="Введите имя" class="input__field" type="login" id="signup-login" required />
+                    </div>
+                    <span class="form-break"></span>
+                    <div class="form__input">
+                        <input placeholder="Введите почту" class="input__field" type="email" id="signup-email" required />
+                    </div>
+                </div>
+                <div class="input__down-side">
+                    <div class="form__input text-input">
+                        <textarea placeholder="Опишите проблему" class="input__field text-field"></textarea>
+                    </div>
+                    <div class="form__input">
+                        <input class="form__input-submit" type="submit" name="" value="Отправить">
+                    </div>
+                </div>
+                </form>
+            </div>
+            <div class="footer__content">
+                <div class="footer-top">
+                    <img src="assets/images/logo.png" alt="logo" class="header__logo">
+                    <div class="footer__column">
+                        <h3 class="footer__title">О нас</h3>
+                        <a href="#" class="footer__link">Команда</a>
+                        <a href="#" class="footer__link">Вакансии</a>
+                        <a href="#" class="footer__link">Контакты</a>
+                        <a href="#" class="footer__link">Ссылки</a>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Ссылки</h3>
+                        <a href="#" class="footer__link">Лицензия</a>
+                        <a href="#" class="footer__link">Адрес</a>
+                        <a href="#" class="footer__link">Ресурсы</a>
+                        <a href="#" class="footer__link">Контракты</a>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">Где мы</h3>
+                        <a href="#" class="footer__link">И кто мы</a>
+                        <a href="#" class="footer__link">Еще как мы</a>
+                        <a href="#" class="footer__link">И зачем мы</a>
+                        <a href="#" class="footer__link">А почему мы?</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-bottom__link">© IT HUB 2022 / Design by <a href="https://github.com/adamsparker" class="footer__link github-link">Adams Parker</a></p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
 
     <div class="icon-panel">
         <nav class="panel">
@@ -268,7 +338,7 @@
         </nav>
     </div>
 
-    <script src="app.js"></script>
-
+    <script src="scripts/app.js"></script>
+    <script src="scripts/mapbox.js"></script>
 </body>
 </html>
