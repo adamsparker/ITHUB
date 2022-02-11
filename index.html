@@ -8,16 +8,37 @@
     <link rel="icon" href="assets/misc/icon.png">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <title>ITHUB</title>
 </head>
 <body>
-    
-    
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="modal-holder" id="modal-menu">
+    <div class="burger-menu">
+        <div class="burger-menu__inner">
+            <div class="logo__inner">
+                <a href="#" class="header__menu modal__close logo-exit">exit</a>
+                <img src="assets/images/logo.png" alt="logo" class="burger-menu__logo">
+            </div>
+            
+            <div class="burger-menu__text-inner">
+                <a href="#" class="burger-menu__link">Услуги</a>
+                <a href="#" class="burger-menu__link">О нас</a>
+                <a href="#" class="burger-menu__link">Отзывы</a>
+                <a href="#" class="burger-menu__link">Связь</a>
+                <a href="#" class="burger-menu__link">Заявка</a>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <section class="intro">
         <div class="container">
         <div class="header">
-            <a href="#" class="header__menu">menu</a>
+            <a href="#" class="header__menu modal-able" data-modal="modal-menu">menu</a>
             <img src="assets/images/logo.png" alt="logo" class="header__logo">
             <span></span>
         </div>
