@@ -1,4 +1,4 @@
-@font-face { font-family: avantgarde; src: url('/assets/fonts/avantgarde.ttf'); } 
+@font-face { font-family: avantgarde; src: url('assets/fonts/avantgarde.ttf'); } 
 
 *,
 *::before
@@ -116,7 +116,7 @@ textarea {
     flex-direction: column;
     max-width: 100%;
     height: 100vh;
-    background: url(/assets/images/figure1.png) center no-repeat;
+    background: url(assets/images/figure1.png) center no-repeat;
     background-size: min(90em);
     background-position: right 35% bottom 100%;
     
@@ -305,7 +305,7 @@ textarea {
 /*     Products     */
 
 .products {
-    background: url(/assets/images/figure2.png) center no-repeat;
+    background: url(assets/images/figure2.png) center no-repeat;
     background-size: min(90em);
     background-position: right 45% bottom 100%;
 }
@@ -362,37 +362,37 @@ textarea {
 
   
 .card:hover:nth-child(1) {
-    background: url(/assets/images/card1.png) left no-repeat, #0c0c0c;
+    background: url(assets/images/card1.png) left no-repeat, #0c0c0c;
     background-size: min(20em);
     transition: .2s all;
 }
 
 .card:hover:nth-child(2) {
-    background: url(/assets/images/card2.png) left no-repeat, #0c0c0c;
+    background: url(assets/images/card2.png) left no-repeat, #0c0c0c;
     background-size: min(20em);
     transition: .2s all;
 }
 
 .card:hover:nth-child(3) {
-    background: url(/assets/images/card3.png) left no-repeat, #0c0c0c;
+    background: url(assets/images/card3.png) left no-repeat, #0c0c0c;
     background-size: min(20em);
     transition: .2s all;
 }
 
 .card:hover:nth-child(4) {
-    background: url(/assets/images/card4.png) left no-repeat, #0c0c0c;
+    background: url(assets/images/card4.png) left no-repeat, #0c0c0c;
     background-size: min(20em);
     transition: .2s all;
 }
 
 .card:hover:nth-child(5) {
-    background: url(/assets/images/card5.png) left no-repeat, #0c0c0c;
+    background: url(assets/images/card5.png) left no-repeat, #0c0c0c;
     background-size: min(20em);
     transition: .2s all;
 }
 
 .card:hover:nth-child(6) {
-    background: url(/assets/images/card6.png) left no-repeat, #0c0c0c;
+    background: url(assets/images/card6.png) left no-repeat, #0c0c0c;
     background-size: min(20em);
     transition: .2s all;
 }
@@ -490,7 +490,7 @@ textarea {
 /*     Reviews     */
 
 .reviews {
-    background: url(/assets/images/figure3.png) center no-repeat;
+    background: url(assets/images/figure3.png) center no-repeat;
     background-size: min(70em);
     background-position: right 35% bottom 100%;
 } 
